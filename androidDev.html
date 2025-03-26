@@ -29,6 +29,8 @@
       <!-- Owl Carousel -->
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!-- Fancybox -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
       <!-- Theme style  -->
       <link rel="stylesheet" href="css/style.css">
       <!-- Modernizr JS -->
@@ -72,7 +74,6 @@
                         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                           <br>
                           <ul class="fa-ul mb-0">
-                            <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
                             <li>
                               <i class="fa-li fa fa-check"></i>
                               <div
@@ -86,8 +87,9 @@
                                     class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
                                     <div id="divMain">
                                       <div id='left-div' class="resume-content">
-                                        <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid'
-                                          src='images/iconix.jpg'>
+                                        <a href="images/iconix.jpg" data-fancybox="android-projects" data-caption="Mediacockpit App" class="project-image">
+                                          <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid' src='images/iconix.jpg'>
+                                        </a>
                                       </div>
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
@@ -107,8 +109,6 @@
                               </div>
                             </li>
                             <br>
-                            <!-- </article>
-                              <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
                             <li>
                               <i class="fa-li fa fa-check"></i>
                               <div
@@ -122,8 +122,9 @@
                                     class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
                                     <div id="divMain">
                                       <div id='left-div' class="resume-content">
-                                        <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid'
-                                          src='images/kotlin.jpg'>
+                                        <a href="images/kotlin.jpg" data-fancybox="android-projects" data-caption="KlapAndroidTv App" class="project-image">
+                                          <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid' src='images/kotlin.jpg'>
+                                        </a>
                                       </div>
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
@@ -169,35 +170,32 @@
                text-align: center;
                text-decoration: none;
                font-size: 16px;
-               
-         
-         " onclick="goBack()">
+               " onclick="goBack()">
            <i class="fa fa-arrow-left"></i> Back
          </button>
                <button id="scrollToTopButton" style="
                position: fixed;
-       bottom: 20px;
-       right: 20px;
-       z-index: 99;
-       display: block;
-       background-color: rgb(249, 191, 63);
-       color: white;
-       border: none;
-       cursor: pointer;
-       padding: 21px 28px;
-       text-align: center;
-       text-decoration: none;
-       font-size: 16px;
-       border-radius: 45px;
-       transition: background-color 0.3s;;
-         
-         " onclick="scrollToTop()">
+               bottom: 20px;
+               right: 20px;
+               z-index: 99;
+               display: block;
+               background-color: rgb(249, 191, 63);
+               color: white;
+               border: none;
+               cursor: pointer;
+               padding: 21px 28px;
+               text-align: center;
+               text-decoration: none;
+               font-size: 16px;
+               border-radius: 45px;
+               transition: background-color 0.3s;;
+               " onclick="scrollToTop()">
            <i class="fa fa-arrow-up"></i>
          </button>
             </div>
             <script>
               function goBack() {
-                window.location.href = "https://azmic123.github.io/MyPortfolio/";
+                window.location.href = "file:///C:/Users/ghisa/azmitc-azmi.github.io/index.html";
               }
             
               // Show button when scrolling down
@@ -240,9 +238,29 @@
             <script src="js/owl.carousel.min.js"></script>
             <!-- Counters -->
             <script src="js/jquery.countTo.js"></script>
+            <!-- Fancybox -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
             <!-- MAIN JS -->
             <script src="js/main.js"></script>
-
+            <script>
+              $(document).ready(function() {
+                // Initialize fancybox for all project images
+                $(".project-image").fancybox({
+                  buttons: [
+                    "zoom",
+                    "share",
+                    "slideShow",
+                    "fullScreen",
+                    "download",
+                    "thumbs",
+                    "close"
+                  ],
+                  animationEffect: "zoom",
+                  transitionEffect: "fade",
+                  loop: true
+                });
+              });
+            </script>
          </div>
       </div>
    </body>
