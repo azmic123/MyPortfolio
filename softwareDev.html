@@ -29,6 +29,8 @@
       <!-- Owl Carousel -->
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!-- Fancybox -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
       <!-- Theme style  -->
       <link rel="stylesheet" href="css/style.css">
       <!-- Modernizr JS -->
@@ -65,7 +67,6 @@
                         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                           <br>
                           <ul class="fa-ul mb-0">
-                            <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
                             <li>
                               <i class="fa-li fa fa-check"></i>
                               <div
@@ -79,8 +80,9 @@
                                     class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
                                     <div id="divMain">
                                       <div id='left-div' class="resume-content">
-                                        <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid'
-                                          src='images/gomycode.png'>
+                                        <a href="images/gomycode.png" data-fancybox="certifications" data-caption="Terraform Certification" class="certification-image">
+                                          <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid' src='images/gomycode.png'>
+                                        </a>
                                       </div>
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
@@ -97,7 +99,6 @@
                                           <br>
                                        <br>
                                        <br>
-                                       
                                       </div>
                                     </div>
                                   </div>
@@ -106,8 +107,6 @@
                             </li>
                             <br>
                             <br>
-                            <!-- </article>
-                              <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
                             <li>
                               <i class="fa-li fa fa-check"></i>
                               <div
@@ -121,8 +120,9 @@
                                     class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
                                     <div id="divMain">
                                       <div id='left-div' class="resume-content">
-                                        <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid'
-                                          src='images/Bigdata.png'>
+                                        <a href="images/Bigdata.png" data-fancybox="certifications" data-caption="Big Data IBM Certification" class="certification-image">
+                                          <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid' src='images/Bigdata.png'>
+                                        </a>
                                       </div>
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
@@ -144,8 +144,6 @@
                             </li>
                             <br>
                             <br>
-                            <!-- </article>
-                              <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
                             <li>
                               <i class="fa-li fa fa-check"></i>
                               <div
@@ -159,8 +157,9 @@
                                     class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
                                     <div id="divMain" width="80%;">
                                       <div id='left-div' class="resume-content">
-                                        <img style='float:left; margin:0 20px;' width='300px;' height='150px;' class='img-fluid'
-                                          src='images/devops.png'>
+                                        <a href="images/devops.png" data-fancybox="certifications" data-caption="Devops Fundamentals Certification" class="certification-image">
+                                          <img style='float:left; margin:0 20px;' width='300px;' height='150px;' class='img-fluid' src='images/devops.png'>
+                                        </a>
                                       </div>
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
@@ -194,8 +193,9 @@
                                     class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
                                     <div id="divMain" width="80%;">
                                       <div id='left-div' class="resume-content">
-                                        <img style='float:left; margin:0 20px;' width='300px;' height='150px;' class='img-fluid'
-                                          src='images/aws.png'>
+                                        <a href="images/aws.png" data-fancybox="certifications" data-caption="AWS Certified Solutions Architect Associate" class="certification-image">
+                                          <img style='float:left; margin:0 20px;' width='300px;' height='150px;' class='img-fluid' src='images/aws.png'>
+                                        </a>
                                       </div>
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
@@ -208,7 +208,6 @@
                                           <span class='badge badge-secondary'>CLOUDFRONT</span>
                                         </div>
                                         <br>
-
                                       </div>
                                     </div>
                                   </div>
@@ -229,8 +228,9 @@
                                     class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
                                     <div id="divMain" width="80%;">
                                       <div id='left-div' class="resume-content">
-                                        <img style='float:left; margin:0 20px;' width='300px;' height='150px;' class='img-fluid'
-                                          src='images/seondoconsulting.png'>
+                                        <a href="images/seondoconsulting.png" data-fancybox="certifications" data-caption="Android Certification" class="certification-image">
+                                          <img style='float:left; margin:0 20px;' width='300px;' height='150px;' class='img-fluid' src='images/seondoconsulting.png'>
+                                        </a>
                                       </div>
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
@@ -278,29 +278,26 @@
          text-align: center;
          text-decoration: none;
          font-size: 16px;
-         
-   
-   " onclick="goBack()">
+         " onclick="goBack()">
      <i class="fa fa-arrow-left"></i> Back
    </button>
          <button id="scrollToTopButton" style="
          position: fixed;
- bottom: 20px;
- right: 20px;
- z-index: 99;
- display: block;
- background-color: rgb(249, 191, 63);
- color: white;
- border: none;
- cursor: pointer;
- padding: 21px 28px;
- text-align: center;
- text-decoration: none;
- font-size: 16px;
- border-radius: 45px;
- transition: background-color 0.3s;;
-   
-   " onclick="scrollToTop()">
+         bottom: 20px;
+         right: 20px;
+         z-index: 99;
+         display: block;
+         background-color: rgb(249, 191, 63);
+         color: white;
+         border: none;
+         cursor: pointer;
+         padding: 21px 28px;
+         text-align: center;
+         text-decoration: none;
+         font-size: 16px;
+         border-radius: 45px;
+         transition: background-color 0.3s;;
+         " onclick="scrollToTop()">
      <i class="fa fa-arrow-up"></i>
    </button>
       </div>
@@ -308,7 +305,7 @@
       <!-- jQuery -->
       <script>
         function goBack() {
-          window.location.href = "https://azmic123.github.io/MyPortfolio/";
+          window.location.href = "file:///C:/Users/ghisa/azmitc-azmi.github.io/index.html";
         }
       
         // Show button when scrolling down
@@ -350,8 +347,28 @@
       <script src="js/owl.carousel.min.js"></script>
       <!-- Counters -->
       <script src="js/jquery.countTo.js"></script>
+      <!-- Fancybox -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
       <!-- MAIN JS -->
       <script src="js/main.js"></script>
-
+      <script>
+        $(document).ready(function() {
+          // Initialize fancybox for all certification images
+          $(".certification-image").fancybox({
+            buttons: [
+              "zoom",
+              "share",
+              "slideShow",
+              "fullScreen",
+              "download",
+              "thumbs",
+              "close"
+            ],
+            animationEffect: "zoom",
+            transitionEffect: "fade",
+            loop: true
+          });
+        });
+      </script>
    </body>
 </html>
